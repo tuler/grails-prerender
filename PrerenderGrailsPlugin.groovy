@@ -2,7 +2,7 @@ import com.github.greengerong.PreRenderSEOFilter
 
 class PrerenderGrailsPlugin {
 	// the plugin version
-	def version = "0.1"
+	def version = "1.0.0"
 	// the version or versions of Grails the plugin is designed for
 	def grailsVersion = "2.2 > *"
 	// resources that are excluded from plugin packaging
@@ -14,7 +14,7 @@ class PrerenderGrailsPlugin {
 	def author = "Danilo Tuler"
 	def authorEmail = "danilo.tuler@ideais.com.br"
 	def description = '''\
-Installs a servlet filter to proxy requests to prerender web server, to provider better SEO for AJAX powered websites. Learn more at http://prerender.io.
+Installs a servlet filter to proxy requests to prerender web service, to provider better SEO for AJAX powered websites. Learn more at http://prerender.io.
 '''
 
 	// URL to the plugin's documentation
@@ -62,7 +62,7 @@ Installs a servlet filter to proxy requests to prerender web server, to provider
 			}
 		}
 		
-		def urlPattern = cfg.url.pattern ?: '/*'
+		def urlPattern = cfg.url?.pattern ?: '/*'
 		List list = urlPattern instanceof List ? urlPattern : [urlPattern]
 		
 		def filter = xml.'filter'
