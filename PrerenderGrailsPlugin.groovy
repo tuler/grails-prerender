@@ -18,7 +18,7 @@ Installs a servlet filter to proxy requests to prerender web service, to provide
 '''
 
 	// URL to the plugin's documentation
-	def documentation = "http://grails.org/plugin/prerender"
+	def documentation = "https://github.com/tuler/grails-prerender"
 
 	// Extra (optional) plugin metadata
 
