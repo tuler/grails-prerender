@@ -40,14 +40,6 @@ You can also change the user agents the filter applies to, separated by comma. T
 
 	prerender.crawlerUserAgents = 'Ezooms,MSNBot,Exabot'
 
-You can limit the URL pattern the filter is applied to:
-
-	prerender.url.pattern = '/admin/*'
-	
-This parameter also accepts a list of patterns to match:
-
-	prerender.url.pattern = ['/admin/*', '/ajax/*']
-	
 Changelog
 ---------
 
