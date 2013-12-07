@@ -4,4 +4,4 @@
 target
 *.xml
 *.zip
-*.tld
+/web-app
