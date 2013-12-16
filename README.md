@@ -17,7 +17,7 @@ Using
 Add a dependency to BuildConfig.groovy:
 
 	plugins {
-		runtime ":prerender:1.0.0"
+		runtime ":prerender:1.0.1"
 		...
 	}
 
@@ -43,4 +43,6 @@ You can also change the user agents the filter applies to, separated by comma. T
 Changelog
 ---------
 
+1.0.1: Upgraded prerender-java dependency to 1.0.1. Fix for User-Agent detection code.
 1.0.0: First working version
+

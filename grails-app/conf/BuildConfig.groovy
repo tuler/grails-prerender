@@ -12,7 +12,7 @@ grails.project.dependency.resolution = {
 	}
 
 	dependencies {
-		runtime 'com.github.greengerong:prerender-java:1.0'
+		runtime 'com.github.greengerong:prerender-java:1.2'
 	}
 
 	plugins {
