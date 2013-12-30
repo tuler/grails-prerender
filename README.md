@@ -48,7 +48,7 @@ In addition to those, you can define the following configuration, which should b
 Changelog
 ---------
 
-1.0.2: Extension list to ignore.
-1.0.1: Upgraded prerender-java dependency to 1.2. Fix for User-Agent detection code.
-1.0.0: First working version
+* 1.0.2: Extension list to ignore.
+* 1.0.1: Upgraded prerender-java dependency to 1.2. Fix for User-Agent detection code.
+* 1.0.0: First working version
 
