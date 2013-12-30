@@ -17,7 +17,7 @@ Using
 Add a dependency to BuildConfig.groovy:
 
 	plugins {
-		runtime ":prerender:1.0.1"
+		runtime ":prerender:1.0.2"
 		...
 	}
 
@@ -40,9 +40,15 @@ You can also change the user agents the filter applies to, separated by comma. T
 
 	prerender.crawlerUserAgents = 'Ezooms,MSNBot,Exabot'
 
+The filter will ignore all url's that contains any of the following extensions: ".js", ".css", ".less", ".png", ".jpg", ".jpeg", ".gif", ".pdf", ".doc", ".txt", ".zip", ".mp3", ".rar", ".exe", ".wmv", ".doc", ".avi", ".ppt", ".mpg", ".mpeg", ".tif", ".wav", ".mov", ".psd", ".ai", ".xls", ".mp4", ".m4a", ".swf", ".dat", ".dmg", ".iso", ".flv", ".m4v", ".torrent".
+In addition to those, you can define the following configuration, which should be a comma separated string with the extensions you want to add to the above list.
+
+	prerender.extensionsToIgnore = '.xml,.json'
+
 Changelog
 ---------
 
-1.0.1: Upgraded prerender-java dependency to 1.0.1. Fix for User-Agent detection code.
+1.0.2: Extension list to ignore.
+1.0.1: Upgraded prerender-java dependency to 1.2. Fix for User-Agent detection code.
 1.0.0: First working version
 
