@@ -16,7 +16,7 @@ Actually this is just a thin wrapper around the filter provided by [https://gith
 Add a dependency to `BuildConfig.groovy`:
 ```groovy
 plugins {
-	runtime ":prerender:1.0.4"
+	runtime ":prerender:1.0.5"
 	...
 }
 ```
@@ -49,6 +49,7 @@ prerender.extensionsToIgnore = '.xml,.json'
 
 ## Changelog
 
+* 1.0.5: Upgraded prerender-java dependency to 1.5.
 * 1.0.4: Upgraded prerender-java dependency to 1.4.
 * 1.0.3: Upgraded prerender-java dependency to 1.3.
 * 1.0.2: Extension list to ignore.
