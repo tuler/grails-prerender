@@ -16,7 +16,7 @@ Actually this is just a thin wrapper around the filter provided by [https://gith
 Add a dependency to `BuildConfig.groovy`:
 ```groovy
 plugins {
-	runtime ":prerender:1.0.6"
+	runtime ":prerender:1.0.7"
 	...
 }
 ```
@@ -36,6 +36,8 @@ prerender.prerenderServiceUrl = 'http://localhost:3000'
 
 The default value is `http://prerender.herokuapp.com`
 
+If you want to use the prerender service, you can configure it using the prerender.prerenderToken configuration key.
+
 You can also change the user agents the filter applies to, separated by comma. This will be added to the default ones. Example: 
 ```groovy
 prerender.crawlerUserAgents = 'Ezooms,MSNBot,Exabot'
@@ -49,6 +51,7 @@ prerender.extensionsToIgnore = '.xml,.json'
 
 ## Changelog
 
+* 1.0.7: Added prerenderToken configuration.
 * 1.0.6: Upgraded prerender-java dependency to 1.6.1.
 * 1.0.5: Upgraded prerender-java dependency to 1.5.
 * 1.0.4: Upgraded prerender-java dependency to 1.4.

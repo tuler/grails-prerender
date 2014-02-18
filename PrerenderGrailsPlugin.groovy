@@ -1,7 +1,7 @@
 import com.github.greengerong.PreRenderSEOFilter
 
 class PrerenderGrailsPlugin {
-	def version = "1.0.6"
+	def version = "1.0.7"
 	def grailsVersion = "2.0 > *"
 	def title = "Prerender Plugin"
 	def author = "Danilo Tuler"
@@ -32,6 +32,13 @@ Installs a servlet filter to proxy requests to prerender web service, to provide
 					}
 				}
 
+				if (cfg.prerenderToken) {
+					'init-param' {
+						'param-name'('prerenderToken')
+						'param-value'(cfg.prerenderToken)
+					}
+				}
+				
 				if (cfg.crawlerUserAgents) {
 					'init-param' {
 						'param-name'('crawlerUserAgents')
