@@ -1,7 +1,7 @@
 import com.github.greengerong.PreRenderSEOFilter
 
 class PrerenderGrailsPlugin {
-	def version = "1.0.5"
+	def version = "1.7.1"
 	def grailsVersion = "2.0 > *"
 	def title = "Prerender Plugin"
 	def author = "Danilo Tuler"
